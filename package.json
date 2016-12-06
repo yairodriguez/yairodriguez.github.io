@@ -1,0 +1,31 @@
+{
+  "name": "yairodriguez",
+  "version": "1.0.0",
+  "description": "Yair, JavaScript Rockstar and Genius Front End Architect.",
+  "main": "index.js",
+  "private": true,
+  "scripts": {
+    "test": "sass-lint --config .scss-lint.yml --verbose --no-exit"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/yairodriguez/yairodriguez.github.io.git"
+  },
+  "keywords": [
+    "Yair",
+    "JavaScript Rockstar",
+    "Genius",
+    "Front End Architect",
+    "Web Development"
+  ],
+  "author": "Yair <@imyairodriguez>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/yairodriguez/yairodriguez.github.io/issues"
+  },
+  "homepage": "https://github.com/yairodriguez/yairodriguez.github.io#readme",
+  "devDependencies": {
+    "node-sass": "^3.13.0",
+    "sass-lint": "^1.10.2"
+  }
+}
