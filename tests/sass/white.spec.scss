@@ -1,7 +1,16 @@
+@charset 'utf-8';
+
 @include test-module('Sass: color.white') {
   @include test('Should return the appropiate white rgba color with $opacity') {
     $actual: white(0.9);
     $expected: rgba(255, 255, 255, 0.9);
+
+    @include assert-equal($actual, $expected);
+  }
+
+  @include test('Should return the color with $opacity value by default') {
+    $actual: white(); // sass-lint:disable-line empty-args
+    $expected: rgba(255, 255, 255, 1);
 
     @include assert-equal($actual, $expected);
   }
