@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html itemscope itemtype='{% if page.schema-type %}http://schema.org/{{ page.schema-type }}{% else %}http://schema.org/Website{% endif %}' itemid='{{ site.url | append: page.url }}'>
+<html itemscope itemtype='http://schema.org/Website' itemid='{{ site.url | append: page.url }}'>
 <head>
   <meta charset='utf-8' />
   <title>{% if page.headline %}{{ page.headline }}{% else %}{{ site.title }}{% endif %}</title>
@@ -10,6 +10,7 @@
   <link rel='stylesheet' href='{{ site.url }}/css/{% if page.custom-css %}{{ page.custom-css }}{% else %}{{ 'main' }}{% endif %}.css' />
   <script src='https://use.typekit.net/gnm0bdk.js'></script>
   <script>try{Typekit.load({ async: true });}catch(e){}</script>
+  {% include seo.html %}
 </head>
 <body>
   {{ content }}
