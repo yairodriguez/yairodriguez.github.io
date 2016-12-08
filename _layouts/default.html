@@ -11,8 +11,21 @@
   <script src='https://use.typekit.net/gnm0bdk.js'></script>
   <script>try{Typekit.load({ async: true });}catch(e){}</script>
   {% include seo.html %}
+  <style>
+    #WebsitePublisher {
+      display: none;
+    }
+  </style>
 </head>
 <body>
+  <div id='WebsitePublisher' itemprop='publisher' itemtype='http://schema.org/Organization' itemscope=''>
+    <em itemprop='name'>{{ site.author }}</em>
+    <figure itemprop='logo' itemscope itemtype='https://schema.org/ImageObject'>
+      <img itemprop='url' src='{{ site.url }}/images/logo.png' alt='Yair, JavaScript Rockstar’s Logo' />
+      <meta itemprop='width' content='980' />
+      <meta itemprop='height' content='980' />
+    </figure>
+  </div>
   {{ content }}
 </body>
 </html>
