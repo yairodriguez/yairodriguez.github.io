@@ -1,0 +1,15 @@
+@charset 'utf-8';
+
+@import 'true';
+
+@import '../../_sass/theme/variables';
+
+@import '../../_sass/functions/color.white';
+@import '../../_sass/functions/palette';
+@import '../../_sass/functions/font';
+
+@import './white.spec';
+@import './palette.spec';
+@import './font.spec';
+
+@include report;

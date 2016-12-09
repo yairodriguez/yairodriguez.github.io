@@ -1,0 +1,12 @@
+@charset 'utf-8';
+
+.header {
+  background-color: palette(cod-gray);
+  height: 100vh;
+  padding: 10px;
+
+  &__frame {
+    border: 2px solid palette(casablanca);
+    height: 100%;
+  }
+}
