@@ -1,0 +1,16 @@
+title: Yair, JavaScript Rockstar
+author: Yair Rodriguez
+keywords: Yair, Frontend, Architect, Design, JavaScript, Rockstar
+email: rodriguezortega.yair@gmail.com
+description: >
+  Yair is a Genius Front End Architect and a JavaScript Rockstar, designing
+  systems to people can communicate with machines.
+
+baseurl: ""
+url: "yairodriguez.github.io"
+twitter_username: imyairodriguez
+github_username:  yairodriguez
+
+# Build settings
+markdown: kramdown
+theme: minima

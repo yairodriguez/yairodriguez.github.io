@@ -1,0 +1,10 @@
+@charset 'utf-8';
+
+@include test-module('Sass: palette') {
+  @include test('Should return the appropiate color by given name') {
+    $actual: palette(casablanca);
+    $expected: #F7AC53;
+
+    @include assert-equal($actual, $expected);
+  }
+}
